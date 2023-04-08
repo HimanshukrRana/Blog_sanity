@@ -17,11 +17,11 @@ export const previewClient = createClient({
     process.env.SANITY_API_READ_TOKEN || process.env.SANITY_API_WRITE_TOKEN,
 })
 
-export const getClient = (preview) => (preview ? previewClient : sanityClient)
+export const getClient = (preview:any) => (preview ? previewClient : sanityClient)
 
-export function overlayDrafts(docs) {
+export function overlayDrafts(docs:any) {
   const documents = docs || []
-  const overlayed = documents.reduce((map, doc) => {
+  const overlayed = documents.reduce((map:any, doc:any) => {
     if (!doc._id) {
       throw new Error('Ensure that `_id` is included in query projection')
     }

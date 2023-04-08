@@ -32,7 +32,8 @@
         "next-env.d.ts",
         "**/*.ts",
         "**/*.tsx",
-        "src/components/blog/hero-post-old.js"
+        "src/components/blog/hero-post-old.js",
+        "src/lib/sanity.js"
     ],
     "exclude": [
         "node_modules"
