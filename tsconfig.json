@@ -31,7 +31,8 @@
     "include": [
         "next-env.d.ts",
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
+        "src/components/blog/hero-post-old.js"
     ],
     "exclude": [
         "node_modules"
