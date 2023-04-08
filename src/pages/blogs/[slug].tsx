@@ -10,7 +10,7 @@ import Post from "../../components/blog/post";
 
 const PostPreview = lazy(() => import("../../components/blog/post-preview"));
 
-export default function PostPage({ preview, data }) {
+export default function PostPage({ preview, data }: any) {
   // console.log(data, "slugggggg");
 
   if (preview) {
@@ -24,7 +24,7 @@ export default function PostPage({ preview, data }) {
   return <Post data={data} />;
 }
 
-export async function getStaticProps({ params, preview = false }) {
+export async function getStaticProps({ params, preview = false }: any) {
   const { post, morePosts } = await getClient(preview).fetch(postQuery, {
     slug: params.slug,
   });
@@ -45,7 +45,7 @@ export async function getStaticProps({ params, preview = false }) {
 export async function getStaticPaths() {
   const paths = await sanityClient.fetch(postSlugsQuery);
   return {
-    paths: paths.map((slug) => ({ params: { slug } })),
+    paths: paths.map((slug: any) => ({ params: { slug } })),
     fallback: true,
   };
 }

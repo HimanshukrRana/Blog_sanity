@@ -33,7 +33,8 @@
         "**/*.ts",
         "**/*.tsx",
         "src/components/blog/hero-post-old.js",
-        "src/lib/sanity.js"
+        "src/lib/sanity.js",
+        "src/lib/logger.js",
     ],
     "exclude": [
         "node_modules"

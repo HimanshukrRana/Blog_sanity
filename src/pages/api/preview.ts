@@ -1,7 +1,7 @@
 import { postBySlugQuery } from '../../lib/queries'
 import { previewClient } from '../../lib/sanity.server'
 
-function redirectToPreview(res, Location) {
+function redirectToPreview(res:any, Location:any) {
   // Enable Preview Mode by setting the cookies
   res.setPreviewData({})
   // Redirect to a preview capable route
@@ -9,7 +9,7 @@ function redirectToPreview(res, Location) {
   res.end()
 }
 
-export default async function preview(req, res) {
+export default async function preview(req:any, res:any) {
   const secret = process.env.SANITY_STUDIO_PREVIEW_SECRET
   // Only require a secret when in production
   if (!secret && process.env.NODE_ENV === 'production') {
