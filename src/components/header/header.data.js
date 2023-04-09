@@ -7,16 +7,16 @@ export default [
     path: "services",
     label: "Services",
   },
-  {
-    path: "about",
-    label: "About",
-  },
+  // {
+  //   path: "about",
+  //   label: "About",
+  // },
   {
     path: "blog",
     label: "Blogs",
   },
-  {
-    path: "contact",
-    label: "Contact",
-  },
+  // {
+  //   path: "contact",
+  //   label: "Contact",
+  // },
 ];
